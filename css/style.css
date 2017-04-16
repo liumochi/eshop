@@ -103,6 +103,7 @@ img{
     font-weight: 300;
 }
 .sub-menu{
+    display: none;
     position: absolute;
     top:42px;
     left:0;
