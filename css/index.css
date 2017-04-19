@@ -3,7 +3,7 @@
     display: none;
 }
 #product{
-    margin-top:50px;
+    margin-top:80px;
 }
 #product-tags{
     text-align: right;
@@ -58,4 +58,56 @@
     clear: both;
     margin: 0 auto;
     display: none;
+}
+#categoires{
+    height: 210px;
+    margin-top: 56px;
+}
+#categoires a{
+    float: left;
+    height: 210px;
+}
+#categoires a div{
+    width: 364px;
+    height: 210px;
+    margin-right: 22px;
+}
+.fashion-a{
+     background: url(../img/categoires/bg1.jpg) no-repeat;
+     width: 32%;
+     margin-right: 2%;
+     min-height: 210px;
+ }
+.fashion-b{
+    background: url(../img/categoires/bg2.jpg) no-repeat;
+    width: 32%;
+    margin-right: 2%;
+    min-height: 210px;
+}
+.fashion-c{
+    background: url(../img/categoires/bg3.jpg) no-repeat;
+    width: 32%;
+    margin-right: 2%;
+    min-height: 210px;
+}
+.sections{
+    text-align: right;
+    padding-top: 9rem;
+}
+.sections h4{
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 15px;
+}
+.sections p{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-right: 15px;
+
 }

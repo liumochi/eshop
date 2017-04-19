@@ -24,7 +24,11 @@ $(function(){
           },
 
         removeCart:function(){//从购物车移除
-
+            //console.log(111);
+            this.productList=[];
+            this.totalAmount=0;
+            this.totalQuantity=0;
+            productComp.render();
         }
     };
     //商品相关功能对象
@@ -32,7 +36,10 @@ $(function(){
         $loading:$('#loading'),
         $productList:$('#product-list'),
         $loadMore:$('#load-more'),
+        $empty:$('#empty'),
         isLoaded:true,
+        isEnd:false,
+        pageNo:1,
         init:function(){
             var _this=this;
 
@@ -48,6 +55,9 @@ $(function(){
             this.$loadMore.on('click',function(){
                 _this.loadMore();
             });
+            this.$empty.on('click',function(){
+                cart.removeCart();
+            });
         },
         render:function(){
             $('#quantity').html(cart.totalQuantity);
@@ -55,9 +65,10 @@ $(function(){
         },
         loadData:function(){
             this.$loading.show();
-            $.get('js/data.json',{},function(data){
-                for(var i=0;i<data.length;i++){
-                    var product=new Product(data[i].product_id,data[i].product_name,data[i].product_price,data[i].product_img);
+            $.get('product/get_products',{page:this.pageNo},function(data){
+                for(var i=0;i<data.products.length;i++){
+                    var products=data.products;
+                    var product=new Product(products[i].prod_id,products[i].prod_name,products[i].prod_price,products[i].prod_img);
                     // var $product=$('<li class="product-item"><img src="'+product.img+'" alt="">\
                     //                 <div class="product-info">\
                     //                 <h3 class="product-name">'+product.name+'</h3>\
@@ -75,10 +86,16 @@ $(function(){
                 this.$loading.hide();
                 this.$loadMore.show();
                 this.isLoaded=true;
+                this.isEnd=data.isEnd;
             }.bind(this),'json')
         },
         loadMore:function(){
+            if(this.isEnd){
+                alert('没有数据了！');
+                return;
+            }
             if(this.isLoaded){
+                this.pageNo++;
                 this.isLoaded=false;
                 this.loadData();
             }
