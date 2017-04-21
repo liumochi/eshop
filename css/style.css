@@ -91,6 +91,7 @@ img{
 #nav li:last-child{
     -webkit-box-flex:1;
 }
+
 #nav .active{
     background: #3C3B3B;
 }
@@ -110,6 +111,12 @@ img{
     width: 100%;
     background: #ffffff;
     height: 280px;
+}
+#nav .women :hover > .sub-menu{
+    display: block;
+}
+#nav .men :hover > .sub-menu{
+    display: block;
 }
 .col{
 float: left;

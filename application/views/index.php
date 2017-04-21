@@ -25,9 +25,8 @@
         </div>
         <ul id="nav" class="wrapper">
             <li><a href="#" class="active">HOME</a></li>
-            <li>
+            <li class="women">
                 <a href="#">WOMEN</a>
-
                 <div class="sub-menu">
                     <div class="col">
                         <h4>SHOP</h4>
@@ -91,7 +90,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li class="men">
                 <a href="#">MEN</a>
                 <div class="sub-menu">
                     <div class="col">
