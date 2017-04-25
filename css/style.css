@@ -112,11 +112,15 @@ img{
     background: #ffffff;
     height: 280px;
 }
-#nav .women :hover > .sub-menu{
+#nav .women:hover > .sub-menu{
     display: block;
 }
-#nav .men :hover > .sub-menu{
+#nav .men:hover > .sub-menu{
     display: block;
+}
+.sub-menu a:hover{
+    color:orange;
+    text-decoration: underline;
 }
 .col{
 float: left;
