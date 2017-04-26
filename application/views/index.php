@@ -31,8 +31,8 @@
                     <div class="col">
                         <h4>SHOP</h4>
                         <ul>
-                            <li><a href="../../products.html">new arrivals</a></li>
-                            <li><a href="../../products.html">men</a></li>
+                            <li><a href="">new arrivals</a></li>
+                            <li><a href="products.php">men</a></li>
                             <li><a href="../../products.html">women</a></li>
                             <li><a href="../../products.html">accessories</a></li>
                             <li><a href="../../products.html">kids</a></li>
