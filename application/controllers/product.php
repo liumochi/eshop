@@ -6,6 +6,12 @@
  * Time: 18:14
  */
 class Product extends CI_Controller{
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('product_model');
+    }
+
     public function index(){
 
     }
@@ -42,6 +48,13 @@ class Product extends CI_Controller{
 
             }
         echo json_encode($data);
+        }
+        public function detail($prod_id){
+            $product=$this->product_model->get_by_id($prod_id);
+            if($product){
+                $this->load->view('single',array('product'=>$product));
+            }
+
         }
 
 }

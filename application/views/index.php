@@ -285,7 +285,8 @@
         </div>
     </div>
     <script id="product-tpl" type="text/html">
-        <li class="product-item"><img src="{{img}}" alt="">
+        <li class="product-item">
+            <a href="product/detail/{{id}}"><img src="{{img}}" alt=""></a>
             <div class="product-info">
                 <h3 class="product-name">{{name}}</h3>
                 <strong class="product-price">${{price}}</strong>

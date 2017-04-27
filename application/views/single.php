@@ -13,7 +13,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,600,800,700,500,300,100,900' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Arimo:400,700,700italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/component.css" />
-<script src="js/jquery.min.js"></script>
+<script src="js/jquery-1.12.4.js"></script>
 <!--<script src="js/simpleCart.min.js"> </script>-->
 <!-- start menu -->
 <link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
