@@ -47,7 +47,11 @@ $(function(){
                 this.loadData();//页面初始化先加载数据
 
                 this.$productList.on('click','.btn-add-cart',function(){
+                    user.checkLogin(function(){
 
+                    },function(){
+                        alert('登陆失败');
+                    });
                     var product=$(this).parents('.product-item').data('item-data');
                     //console.log($(this).parents('.product-item'));
                     product.quantity=parseInt($(this).prev().val());

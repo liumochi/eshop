@@ -22,4 +22,17 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('index');
 	}
+	public function check_login()
+    {
+        $loginUser=$this->session->userdata('loginUser');
+        if($loginUser){
+            echo 'logined';
+        }else{
+            echo 'unlogined';
+        }
+    }
+    public function login()
+    {
+
+    }
 }
