@@ -33,6 +33,15 @@ class Welcome extends CI_Controller {
     }
     public function login()
     {
-
+        $username=$this->input->post('username');
+        $password=$this->input->post('password');
+        $this->load->model('user_model');
+        $user=$this->user_model->get_by_name_and_pwd($username,$password);
+        if($user){
+            $this->session->set_userdata('loginUser',$user);
+            echo 'success';
+        }else{
+            echo 'fail';
+        }
     }
 }

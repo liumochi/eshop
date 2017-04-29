@@ -48,9 +48,11 @@ $(function(){
 
                 this.$productList.on('click','.btn-add-cart',function(){
                     user.checkLogin(function(){
-
+                        console.log(111);
                     },function(){
-                        alert('登陆失败');
+                        model.show(function(){
+                           alert('成功添加购物车');
+                        });
                     });
                     var product=$(this).parents('.product-item').data('item-data');
                     //console.log($(this).parents('.product-item'));

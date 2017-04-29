@@ -8,8 +8,11 @@
     <base href="<?php site_url();?>">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,600,800,700,500,300,100,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arimo:400,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/index.css"/>
+
 </head>
 <body style="height:2000px">
     <div id="header">
@@ -284,6 +287,7 @@
             加载更多商品...
         </div>
     </div>
+    <?php include 'dialog.php';?>
     <script id="product-tpl" type="text/html">
         <li class="product-item">
             <a href="product/detail/{{id}}"><img src="{{img}}" alt=""></a>
@@ -296,8 +300,10 @@
         </li>
     </script>
     <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/template.js"></script>
     <script src="js/user.js"></script>
+    <script src="js/model.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
