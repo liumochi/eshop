@@ -56,6 +56,11 @@ class Product extends CI_Controller{
             }
 
         }
+        public function add_cart(){
+            $product=$this->input->get('product');
+            $rows=$this->product_model->add_cart($product);
+            echo $rows;
+        }
 
 }
 
