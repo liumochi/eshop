@@ -57,8 +57,16 @@ class Product extends CI_Controller{
 
         }
         public function add_cart(){
-            $product=$this->input->get('product');
-            $rows=$this->product_model->add_cart($product);
+            $quantity=$this->input->get('quantity');
+            $id=$this->input->get('id');
+            $product=$this->product_model->get_cart_by_prod_id($id);
+            if($product){
+                $rows=$this->product_model->update_cart($id,$product->quantity,$quantity,$this->session->userdata('loginUser')->user_id);
+                //var_dump($product);
+            }else{
+                $rows=$this->product_model->add_cart($quantity,$id);
+
+            }
             echo $rows;
         }
 

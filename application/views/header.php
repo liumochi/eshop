@@ -2,7 +2,7 @@
     <div class="top-menu wrapper">
         <a href="#" id="login">LOGIN</a>
         <div id="cart-box">
-            <a href="#">
+            <a href="product/">
                 Cart: <span id="money">0</span>(<span id="quantity"></span>)
             </a>
             <p id="empty">empty cart</p>

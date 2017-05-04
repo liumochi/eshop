@@ -63,16 +63,31 @@ class Product_model extends CI_Model{
         $product->imgs = $this->db->get_where('t_product_img', array('prod_id'=>$prod_id))->result();
         return $product;
     }
-    public function add_cart($product)//插入数据库
+    public function add_cart($quantity,$id)//插入数据库
     {
         $data=array(
-            'prod_id'=>$product->id,
-            'quantity'=>$product->quantity,
+            'prod_id'=>$id,
+            'quantity'=>$quantity,
             'user_id'=>$this->session->userdata('loginUser')->user_id
         );
+        $this->db->insert('t_cart',$data);
+        return $this->db->affected_rows();
     }
-    public function update_cart()
+    public function update_cart($prod_id,$old_quantity,$new_quantity,$user_id)
     {
+        $data = array(
+            'quantity' =>$old_quantity+$new_quantity,
+
+        );
+
+        $this->db->where('prod_id',$prod_id);
+        $this->db->where('user_id',$user_id);
+        $this->db->update('t_cart',$data);
+
+    }
+    public function get_cart_by_prod_id($prod_id)
+    {
+        return $this->db->get_where('t_cart', array('prod_id'=>$prod_id))->row();
 
     }
 
