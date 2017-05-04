@@ -19,9 +19,14 @@ $(function(){
             productList:[],
             addCart:function(product){//添加商品到购物车
                 $.get('product/add_cart',{
-                    id:product.id
-                },function(){
-
+                    id:product.id,
+                    quantity:product.quantity
+                },function(data){
+                    if(data>0){
+                        alert('ok');
+                    }else{
+                        alert('fail');
+                    }
                 },'json');
 
 
