@@ -18,7 +18,14 @@ $(function(){
             totalQuantity:0,
             productList:[],
             addCart:function(product){//添加商品到购物车
-                this.productList.push(product);
+                $.get('product/add_cart',{
+                    id:product.id
+                },function(){
+
+                },'json');
+
+
+                //this.productList.push(product);
                 this.totalQuantity+=product.quantity;
                 this.totalAmount+=product.quantity*product.price;
                 productComp.render();
