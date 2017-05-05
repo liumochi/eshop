@@ -65,9 +65,27 @@ class Product extends CI_Controller{
                 //var_dump($product);
             }else{
                 $rows=$this->product_model->add_cart($quantity,$id);
-
             }
+            //更新session中数据
+            $loginUser=$this->session->userdata('loginUser');
+            $cart_info=$this->product_model->get_cart_by_user_id($loginUser->user_id);
+            $this->session->set_userdata('cartInfo',$cart_info);
             echo $rows;
+        }
+        public function cart()
+        {
+            $this->load->view('cart');
+        }
+        public function get_cart_list()
+        {
+            //header('Access-Control-Allow-Origin:*');
+            $loginUser=$this->session->userdata('loginUser');
+            $result=$this->product_model->get_cart_info_user_id($loginUser->user_id);
+
+            $data=array(
+                'cart_info'=>$result
+            );
+            echo json_encode($data);
         }
 
 }
