@@ -75,7 +75,7 @@
         </li>
     </script>
 
-    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-1.12.4.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/template.js"></script>
     <script src="js/user.js"></script>

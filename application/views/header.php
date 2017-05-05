@@ -2,8 +2,26 @@
     <div class="top-menu wrapper">
         <a href="#" id="login">LOGIN</a>
         <div id="cart-box">
-            <a href="product/">
-                Cart: <span id="money">0</span>(<span id="quantity"></span>)
+            <a href="product/cart">
+                Cart: <span id="money">
+                    <?php
+                        $cartInfo=$this->session->userdata('cartInfo');
+                        if($cartInfo){
+                            echo $cartInfo->total_price;
+                        }else{
+                            echo 0;
+                        }
+                    ?>
+                </span>(<span id="quantity">
+                     <?php
+                     $cartInfo=$this->session->userdata('cartInfo');
+                     if($cartInfo){
+                         echo $cartInfo->total_quantity;
+                     }else{
+                         echo 0;
+                     }
+                     ?>
+                </span>)
             </a>
             <p id="empty">empty cart</p>
         </div>
