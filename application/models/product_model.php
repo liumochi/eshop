@@ -90,6 +90,18 @@ class Product_model extends CI_Model{
         return $this->db->get_where('t_cart', array('prod_id'=>$prod_id))->row();
 
     }
+    //进入页面时根据用户id查询数据库里购物车的信息
+    public function get_cart_by_user_id($user_id)
+    {
+        $sql='SELECT sum(quantity) total_quantity,sum(prod_price*quantity) total_price from t_cart c,t_product p where c.prod_id=p.prod_id and c.user_id='.$user_id;
+        return  $this->db->query($sql)->row();
+    }
+
+    public function get_cart_info_user_id($user_id)
+    {
+        $sql = 'select * from t_cart c, t_product p,t_product_img i where c.prod_id=p.prod_id and p.prod_id=i.prod_id and i.is_main=1 and c.user_id='.$user_id;
+        return  $this->db->query($sql)->result();
+    }
 
 }
 ?>
