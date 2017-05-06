@@ -13,7 +13,9 @@ $(function(){
         var cartComp={
             init:function(){
                 //获取购物车列表
-                $.get('product/get_cart_list', null, function (data) {
+
+
+                $.get('product/get_cart_list',function (data) {
                     for(var i=0; i<data.cartInfo.length; i++){
                         var cartInfo = data.cartInfo[i];
                         var detail = {
