@@ -92,6 +92,7 @@
     <script src="js/template.js"></script>
     <script src="js/user.js"></script>
     <script src="js/model.js"></script>
+    <script src="js/Product.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
