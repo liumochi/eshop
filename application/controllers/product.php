@@ -90,7 +90,6 @@ class Product extends CI_Controller{
               'cartInfo'=>$result
             );
         echo json_encode($data);
-        // echo"aaa";
     }
 
 }
