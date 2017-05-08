@@ -90,9 +90,10 @@
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/template.js"></script>
-    <script src="js/user.js"></script>
-    <script src="js/model.js"></script>
-    <script src="js/Product.js"></script>
+<!--    <script src="js/user.js"></script>-->
+<!--    <script src="js/model.js"></script>-->
+<!--    <script src="js/Product.js"></script>-->
+    <script src="js/jsLoader.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

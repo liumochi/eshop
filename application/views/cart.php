@@ -34,7 +34,7 @@
                     <span class="gap">优惠</span><span>---</span><br>
                     <span class="gap">运费</span><span>00.00</span><br>
                     <div>
-                        <span class="gap sum">总计</span><span class="sum">
+                        <span class="gap sum">总计</span><span class="total-price">
                             <?php
                                 $cartInfo = $this->session->userdata('cartInfo');
                                 if($cartInfo){
@@ -65,7 +65,7 @@
                 <h4>{{name}}</h4>
                 <div class="price">
                     <span class="on-sale">价格：${{price}}</span>
-                    数量： <input type="number" value="{{quantity}}">
+                    数量： <input type="number" value="{{quantity}}" class="quantity">
                 </div>
                 <div class="time">
                     <span>优惠: ¥00.00</span>
@@ -78,10 +78,11 @@
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/template.js"></script>
-    <script src="js/user.js"></script>
-    <script src="js/model.js"></script>
-    <script src="js/Product.js"></script>
-    <script src="js/cart.js"></script>
+<!--    <script src="js/user.js"></script>-->
+<!--    <script src="js/model.js"></script>-->
+<!--    <script src="js/Product.js"></script>-->
+    <script src="js/jsLoader.js"></script>
+    <script src="js/cart2.js"></script>
 
 </body>
 </html>
