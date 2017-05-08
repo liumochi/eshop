@@ -7,5 +7,5 @@ var Product=function(id,name,price,img,quantity){
         this.name=name;
         this.price=price;
         this.img=img;
-        this.quantity=1;
+        this.quantity=quantity;
     };
