@@ -39,6 +39,7 @@ img{
     font-weight: 600;
     padding: 0 8px;
     float:left;
+    cursor: pointer;
 }
 #cart-box{
     width: 262px;

@@ -1,6 +1,6 @@
 <div id="header">
     <div class="top-menu wrapper">
-        <a href="#" id="login">LOGIN</a>
+        <a id="login">LOGIN</a>
         <div id="cart-box">
             <a href="product/cart">
                 Cart: <span id="money">

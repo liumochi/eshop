@@ -45,6 +45,7 @@ $(function(){
                 $productList:$('#product-list'),
                 $loadMore:$('#load-more'),
                 $empty:$('#empty'),
+                $login:$('#login'),
                 isLoaded:true,
                 isEnd:false,
                 pageNo:1,
@@ -52,7 +53,19 @@ $(function(){
                     var _this=this;
 
                     this.loadData();//页面初始化先加载数据
+                    this.$login.on('click',function(){
+                        user.checkLogin(function(){
+                            console.log(111);
+                        },function(){
+                            model.show(function(){
+                                alert('登陆成功');
+                                _this.$login.html('LOGINED');
+                            });
 
+
+                        });
+
+                    });
                     this.$productList.on('click','.btn-add-cart',function(){
                         user.checkLogin(function(){
                             console.log(111);
