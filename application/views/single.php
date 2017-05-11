@@ -390,7 +390,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 <div class="container">
 	 <div class="ftr-logo"><h3><a href="index.html">NEW FASHIONS</a></h3></div>
 	 <div class="ftr-info">
-	 <p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+	 <p>Copyright &copy; 2015.Company name All rights reserved. <a href="http://www.cssmoban.com/" target="_blank" title=""></a> - Collect from <a href="" title="" target="_blank">网上商城</a></p>
 	</div>	 <div class="clearfix"></div>
 	 </div>
 </div>

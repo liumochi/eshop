@@ -51,7 +51,10 @@ class Product extends CI_Controller{
         echo json_encode($data);
     }
     public function detail($prod_id){
+
         $product=$this->product_model->get_by_id($prod_id);
+//        echo json_encode($product);
+//        die();
         if($product){
             $this->load->view('single',array('product'=>$product));
         }

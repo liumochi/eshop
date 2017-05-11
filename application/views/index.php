@@ -75,6 +75,14 @@
             加载更多商品...
         </div>
     </div>
+    <div class="fotter-logo">
+        <div class="container">
+            <div class="ftr-logo"><h3><a href="index.html">NEW FASHIONS</a></h3></div>
+            <div class="ftr-info">
+                <p>Copyright &copy; 2015.Company name All rights reserved. <a href="http://www.cssmoban.com/" target="_blank" title=""></a> - Collect from <a href="" title="" target="_blank">网上商城</a></p>
+            </div>	 <div class="clearfix"></div>
+        </div>
+    </div>
     <?php include 'dialog.php';?>
     <script id="product-tpl" type="text/html">
         <li class="product-item">
@@ -87,6 +95,7 @@
             </div>
         </li>
     </script>
+
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/template.js"></script>
