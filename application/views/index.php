@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/index.css"/>
 
 </head>
-<body style="height:2000px">
+<body>
     <?php include 'header.php'?>
     <div id="categoires" class="wrapper">
         <a href="#">

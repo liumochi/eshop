@@ -71,7 +71,7 @@
                 <div class="col">
                     <h4>MY COMPANY</h4>
                     <ul>
-                        <li><a href="../../products.html">tremds</a></li>
+                        <li><a href="../../products.html">trends</a></li>
                         <li><a href="../../products.html">sale</a></li>
                         <li><a href="../../products.html">style videos</a></li>
                         <li><a href="../../products.html">accessories</a></li>
@@ -228,4 +228,10 @@
             </div>
         </li>
     </ul>
+    <div class="caption">
+        <h1>FASHION AND CREATIVITY</h1>
+        <p>Sed dapibus est a lorem dictum, id dignissim lacus fermentum. Nulla ut nibh in libero maximus pretium
+            Nunc vulputate vel tellus ac elementum. Duis nec tincidunt dolor, ac dictum eros.</p>
+    </div>
+
 </div>

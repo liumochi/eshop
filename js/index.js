@@ -55,7 +55,7 @@ $(function(){
                     this.loadData();//页面初始化先加载数据
                     this.$login.on('click',function(){
                         user.checkLogin(function(){
-                            console.log(111);
+                            //console.log(111);
                         },function(){
                             model.show(function(){
                                 alert('登陆成功');

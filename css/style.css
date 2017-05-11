@@ -112,6 +112,8 @@ img{
     width: 100%;
     background: #ffffff;
     height: 280px;
+    /*使submenu在下面文字上*/
+    z-index: 9999; 
 }
 #nav .women:hover > .sub-menu{
     display: block;

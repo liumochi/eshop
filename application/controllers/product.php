@@ -22,9 +22,9 @@ class Product extends CI_Controller{
         $tagId=$this->input->get('tagId');
 
         $per_page=3;
-        $this->load->model('product_model');
+        //$this->load->model('product_model');
         $search=array();
-        if($cateId && $cateId!=0){
+        if($cateId && $cateId != 0){
             $search['cate_id']=$cateId;
 
         }else if($tagId){
