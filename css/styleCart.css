@@ -19,7 +19,7 @@ img{
     border:0;
 }
 #header{
-    height: 720px;
+    height: 250px;
     background: url(../img/banner33.jpg) no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -113,7 +113,7 @@ img{
     background: #ffffff;
     height: 280px;
     /*使submenu在下面文字上*/
-    z-index: 9999; 
+    z-index: 9999;
 }
 #nav .women:hover > .sub-menu{
     display: block;
@@ -126,8 +126,8 @@ img{
     text-decoration: underline;
 }
 .col{
-float: left;
-   margin-right: 80px;
+    float: left;
+    margin-right: 80px;
     margin-left:20px
 }
 .col h4{

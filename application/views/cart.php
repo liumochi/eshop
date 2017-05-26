@@ -7,13 +7,12 @@
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/cart.css">
-
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleCart.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <?php include 'header.php'?>
+    <?php include 'headerCart.php'?>
     <div id="cart-container">
         <div class="wrapper">
            <ul id="cart-mine" class="float"></ul>

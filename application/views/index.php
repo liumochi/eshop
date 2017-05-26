@@ -9,7 +9,6 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,600,800,700,500,300,100,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arimo:400,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css">
-
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/index.css"/>
 
