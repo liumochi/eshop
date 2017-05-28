@@ -21,6 +21,7 @@ $(function(){
                     _this.countTotalPrice();
                 })
             },
+
             loadData:function () {
                 $.get('product/get_cart_list',function (data) {
                     for(var i=0; i<data.cartInfo.length; i++){
