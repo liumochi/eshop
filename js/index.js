@@ -106,6 +106,7 @@ $(function(){
                             //                 </div>\
                             //                 </li>');
                             // $product.data('item-data',product);
+
                             var productHtml=template('product-tpl',product);
                             var $product=$(productHtml);
                             $product.data('item-data',product);

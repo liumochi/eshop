@@ -89,7 +89,7 @@
             <div class="product-info">
                 <h3 class="product-name">{{name}}</h3>
                 <strong class="product-price">${{price}}</strong>
-                <input type="text" class="quantity" value="{{quantity}}">
+                <input type="text" class="quantity" value="1">
                 <button class="btn-add-cart">Add</button>
             </div>
         </li>
