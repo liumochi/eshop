@@ -20,7 +20,7 @@
                 <button class="btn continue">继续购物</button>
                 <p class="description">价格详述</p>
                 <div class="total">
-                    <span class="gap">总计</span><span>
+                    <span class="gap">总计</span><span class="total-price">
                         <?php
                             $cartInfo = $this->session->userdata('cartInfo');
                             if($cartInfo){
