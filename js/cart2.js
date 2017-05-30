@@ -8,11 +8,13 @@ $(function(){
         var cartComp={
             $cartMine:$('#cart-mine'),
             cartList:[],
+            $cartDetail:$('.cart-detail'),
             init:function(){
                 var _this=this;
                 this.loadData();
                 this.$cartMine.on('click','.close',function(){
                     var product = $(this).parent().data('prod');
+                    $(this).parent().remove();
                     _this.remove(product);
                 });
                 this.$cartMine.on('keyup','.quantity',function(){
@@ -37,6 +39,7 @@ $(function(){
             remove:function (product) {
                 this.cartList.splice(this.cartList.indexOf(product),1);
                 this.countTotalPrice();
+
                 //console.log(this.cartList);
             },
             countTotalPrice:function () {
