@@ -19,16 +19,18 @@ $(function(){
                     },function(data){
                         if(data>0){
                             alert('ok');
+
                         }else{
                             alert('fail');
                         }
+
                     },'json');
 
-
-                    //this.productList.push(product);
                     this.totalQuantity+=product.quantity;
                     this.totalAmount+=product.quantity*product.price;
                     productComp.render();
+                    //this.productList.push(product);
+
                 },
 
                 removeCart:function(){//从购物车移除
@@ -59,25 +61,30 @@ $(function(){
                         },function(){
                             model.show(function(){
                                 alert('登陆成功');
-                                _this.$login.html('LOGINED');
-                            });
+                                window.location.reload();
 
+                            });
+                            // _this.$login.html('LOGINED');
 
                         });
 
                     });
                     this.$productList.on('click','.btn-add-cart',function(){
                         user.checkLogin(function(){
+                            cart.addCart(product);
                             console.log(111);
                         },function(){
                             model.show(function(){
                                 alert('成功添加购物车');
+                                cart.addCart(product);
                             });
+
                         });
                         var product=$(this).parents('.product-item').data('item-data');
                         //console.log($(this).parents('.product-item'));
                         product.quantity=parseInt($(this).prev().val());
-                        cart.addCart(product);
+                       // cart.addCart(product);
+
                     });
                     this.$loadMore.on('click',function(){
                         _this.loadMore();
@@ -87,6 +94,7 @@ $(function(){
                     });
                 },
                 render:function(){
+                    alert('render');
                     $('#quantity').html(cart.totalQuantity);
                     $('#money').html(cart.totalAmount);
                 },

@@ -64,15 +64,20 @@ class Product extends CI_Controller{
         $quantity=$this->input->get('quantity');
         $id=$this->input->get('id');
         $product=$this->product_model->get_cart_by_prod_id($id);
+
         if($product){
             $rows=$this->product_model->update_cart($id,$product->quantity,$quantity,
                 $this->session->userdata('loginUser')->user_id);
+
+
             //var_dump($product);
         }else{
             $rows=$this->product_model->add_cart($quantity,$id);
         }
+
         //更新session中数据
         $loginUser=$this->session->userdata('loginUser');
+
         $cart_info=$this->product_model->get_cart_by_user_id($loginUser->user_id);
         $this->session->set_userdata('cartInfo',$cart_info);
         echo $rows;
