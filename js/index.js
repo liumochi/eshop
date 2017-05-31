@@ -30,7 +30,6 @@ $(function(){
                     this.totalAmount+=product.quantity*product.price;
                     productComp.render();
                     //this.productList.push(product);
-
                 },
 
                 removeCart:function(){//从购物车移除
@@ -94,7 +93,7 @@ $(function(){
                     });
                 },
                 render:function(){
-                    alert('render');
+                    alert('添加成功');
                     $('#quantity').html(cart.totalQuantity);
                     $('#money').html(cart.totalAmount);
                 },
